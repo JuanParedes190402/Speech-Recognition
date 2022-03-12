@@ -16,12 +16,6 @@ recognition.addEventListener('result', (e)=>{
 
   p.innerText = text;
   if(e.results[0].isFinal){
-    if (text.includes('Cómo estás') || text.includes('cómo estás')) {
-      p = document.createElement('p');
-      p.classList.add('replay');
-      p.innerText = 'Estoy bien:)';
-      texts.appendChild(p)
-    }
     if (text.includes("Cuál es tu nombre") || text.includes('cuál es tu nombre')) {
       p = document.createElement('p');
       p.classList.add('replay');
@@ -29,7 +23,7 @@ recognition.addEventListener('result', (e)=>{
       texts.appendChild(p)
     }
   
-    if (text.includes('Pon un himno') || text.includes('Pon un himno')) {
+    if (text.includes('pon un himno') || text.includes('Pon un himno')) {
       p = document.createElement('p');
       p.classList.add('replay');
       p.innerText = 'Reproduciendo La Santa-Bad Bunny';
