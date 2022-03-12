@@ -16,25 +16,32 @@ recognition.addEventListener('result', (e)=>{
 
   p.innerText = text;
   if(e.results[0].isFinal){
-    if (text.includes('how are you')) {
+    if (text.includes('Cómo estás') || text.includes('cómo estás')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'I am fine';
+      p.innerText = 'Estoy bien:)';
       texts.appendChild(p)
     }
-    if (text.includes("what's your name") || text.includes('what is your name')) {
+    if (text.includes("Cuál es tu nombre") || text.includes('cuál es tu nombre')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'My Name is Cifar';
+      p.innerText = 'Mi nombre es Juan Paredes 😎';
       texts.appendChild(p)
     }
-    if (text.includes('open my YouTube')) {
+  
+    if (text.includes('Pon un himno') || text.includes('Pon un himno')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'opening youtube channel';
+      p.innerText = 'Abriendo youtube';
       texts.appendChild(p)
-      console.log('opening youtube')
-      window.open('https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ')
+      console.log('Abriendo youtube')
+      window.open('https://www.youtube.com/watch?v=JUxITamPWrY&ab_channel=BadBunny')
+    }
+    if (text.includes("manda un saludo") || text.includes('Manda un saludo')) {
+      p = document.createElement('p');
+      p.classList.add('replay');
+      p.innerText = 'Saludos a Victor Pinedo. 😎';
+      texts.appendChild(p)
     }
     p = document.createElement('p');
   }
