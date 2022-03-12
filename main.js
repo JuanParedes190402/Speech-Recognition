@@ -32,7 +32,7 @@ recognition.addEventListener('result', (e)=>{
     if (text.includes('Pon un himno') || text.includes('Pon un himno')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'Abriendo youtube';
+      p.innerText = 'Reproduciendo La Santa-Bad Bunny';
       texts.appendChild(p)
       console.log('Abriendo youtube')
       window.open('https://www.youtube.com/watch?v=JUxITamPWrY&ab_channel=BadBunny')
